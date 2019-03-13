@@ -1,0 +1,314 @@
+EESchema Schematic File Version 4
+LIBS:rpismdoven-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5C862A2B
+P 1875 2500
+F 0 "J1" H 1875 3978 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 1875 3887 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 1875 2500 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 1875 2500 50  0001 C CNN
+	1    1875 2500
+	1    0    0    -1  
+$EndComp
+Text Label 1075 3000 2    50   ~ 0
+SCK
+Text Label 1075 2100 2    50   ~ 0
+SO
+Text Label 1075 2900 2    50   ~ 0
+CS
+Text Label 2675 3200 0    50   ~ 0
+PWM
+$Comp
+L power:+5V #PWR05
+U 1 1 5C882D61
+P 1725 1050
+F 0 "#PWR05" H 1725 900 50  0001 C CNN
+F 1 "+5V" H 1740 1223 50  0000 C CNN
+F 2 "" H 1725 1050 50  0001 C CNN
+F 3 "" H 1725 1050 50  0001 C CNN
+	1    1725 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 1050 1725 1150
+Wire Wire Line
+	1725 1150 1675 1150
+Wire Wire Line
+	1675 1150 1675 1200
+Wire Wire Line
+	1725 1150 1775 1150
+Wire Wire Line
+	1775 1150 1775 1200
+Connection ~ 1725 1150
+$Comp
+L power:+3V3 #PWR07
+U 1 1 5C884F75
+P 2025 1050
+F 0 "#PWR07" H 2025 900 50  0001 C CNN
+F 1 "+3V3" H 2040 1223 50  0000 C CNN
+F 2 "" H 2025 1050 50  0001 C CNN
+F 3 "" H 2025 1050 50  0001 C CNN
+	1    2025 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 1050 2025 1150
+Wire Wire Line
+	2025 1150 1975 1150
+Wire Wire Line
+	1975 1150 1975 1200
+Wire Wire Line
+	2025 1150 2075 1150
+Wire Wire Line
+	2075 1150 2075 1200
+Connection ~ 2025 1150
+Text Label 2675 3300 0    50   ~ 0
+BUZZ
+NoConn ~ 2675 2600
+NoConn ~ 2675 2700
+NoConn ~ 2675 2800
+NoConn ~ 2675 2900
+NoConn ~ 2675 3000
+NoConn ~ 2675 1900
+NoConn ~ 2675 2000
+NoConn ~ 2675 1700
+NoConn ~ 1075 1600
+NoConn ~ 1075 1700
+NoConn ~ 1075 1900
+NoConn ~ 1075 2000
+NoConn ~ 1075 2300
+NoConn ~ 1075 2400
+NoConn ~ 1075 2500
+NoConn ~ 1075 2700
+NoConn ~ 1075 2800
+NoConn ~ 1075 3100
+NoConn ~ 1075 3200
+$Comp
+L power:GND #PWR06
+U 1 1 5C8A6BBA
+P 1775 3975
+F 0 "#PWR06" H 1775 3725 50  0001 C CNN
+F 1 "GND" H 1780 3802 50  0000 C CNN
+F 2 "" H 1775 3975 50  0001 C CNN
+F 3 "" H 1775 3975 50  0001 C CNN
+	1    1775 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 3800 2175 3875
+Wire Wire Line
+	2175 3875 2075 3875
+Wire Wire Line
+	1475 3875 1475 3800
+Wire Wire Line
+	1775 3975 1775 3925
+Connection ~ 1775 3875
+Wire Wire Line
+	1775 3875 1675 3875
+Wire Wire Line
+	2075 3800 2075 3875
+Connection ~ 2075 3875
+Wire Wire Line
+	2075 3875 1975 3875
+Wire Wire Line
+	1975 3800 1975 3875
+Connection ~ 1975 3875
+Wire Wire Line
+	1975 3875 1875 3875
+Wire Wire Line
+	1875 3800 1875 3875
+Connection ~ 1875 3875
+Wire Wire Line
+	1875 3875 1775 3875
+Wire Wire Line
+	1775 3800 1775 3875
+Wire Wire Line
+	1675 3800 1675 3875
+Connection ~ 1675 3875
+Wire Wire Line
+	1675 3875 1575 3875
+Wire Wire Line
+	1575 3800 1575 3875
+Connection ~ 1575 3875
+Wire Wire Line
+	1575 3875 1475 3875
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5C8B3E2C
+P 1500 1050
+F 0 "#FLG01" H 1500 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 1500 1224 50  0000 C CNN
+F 2 "" H 1500 1050 50  0001 C CNN
+F 3 "~" H 1500 1050 50  0001 C CNN
+	1    1500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5C8B3E74
+P 2300 1050
+F 0 "#FLG02" H 2300 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 2300 1224 50  0000 C CNN
+F 2 "" H 2300 1050 50  0001 C CNN
+F 3 "~" H 2300 1050 50  0001 C CNN
+	1    2300 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1050 2300 1150
+Wire Wire Line
+	2300 1150 2075 1150
+Connection ~ 2075 1150
+Wire Wire Line
+	1500 1150 1675 1150
+Wire Wire Line
+	1500 1050 1500 1150
+Connection ~ 1675 1150
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C8BA961
+P 1975 3975
+F 0 "#FLG0101" H 1975 4050 50  0001 C CNN
+F 1 "PWR_FLAG" H 1975 4148 50  0000 C CNN
+F 2 "" H 1975 3975 50  0001 C CNN
+F 3 "~" H 1975 3975 50  0001 C CNN
+	1    1975 3975
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1975 3975 1975 3925
+Wire Wire Line
+	1975 3925 1775 3925
+Connection ~ 1775 3925
+Wire Wire Line
+	1775 3925 1775 3875
+$Comp
+L Device:R_Small R5
+U 1 1 5C8BFEE4
+P 2925 1600
+F 0 "R5" V 2729 1600 50  0000 C CNN
+F 1 "R_Small" V 2820 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2925 1600 50  0001 C CNN
+F 3 "~" H 2925 1600 50  0001 C CNN
+	1    2925 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5C8C251B
+P 2950 2300
+F 0 "R6" V 2754 2300 50  0000 C CNN
+F 1 "R_Small" V 2845 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 2300 50  0001 C CNN
+F 3 "~" H 2950 2300 50  0001 C CNN
+	1    2950 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5C8C2557
+P 2950 2400
+F 0 "R7" V 2754 2400 50  0000 C CNN
+F 1 "R_Small" V 2845 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 2400 50  0001 C CNN
+F 3 "~" H 2950 2400 50  0001 C CNN
+	1    2950 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 2400 2675 2400
+Wire Wire Line
+	2675 2300 2850 2300
+$Comp
+L Device:LED D3
+U 1 1 5C8C73ED
+P 3275 1600
+F 0 "D3" H 3267 1345 50  0000 C CNN
+F 1 "LED" H 3267 1436 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 3275 1600 50  0001 C CNN
+F 3 "~" H 3275 1600 50  0001 C CNN
+	1    3275 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3125 1600 3025 1600
+$Comp
+L Device:LED D4
+U 1 1 5C8C9CD9
+P 3300 2300
+F 0 "D4" H 3292 2045 50  0000 C CNN
+F 1 "LED" H 3292 2136 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 3300 2300 50  0001 C CNN
+F 3 "~" H 3300 2300 50  0001 C CNN
+	1    3300 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 2300 3050 2300
+$Comp
+L Device:LED D5
+U 1 1 5C8CC666
+P 3300 2400
+F 0 "D5" H 3292 2145 50  0000 C CNN
+F 1 "LED" H 3292 2236 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 3300 2400 50  0001 C CNN
+F 3 "~" H 3300 2400 50  0001 C CNN
+	1    3300 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C8CF0F6
+P 3600 2475
+F 0 "#PWR0101" H 3600 2225 50  0001 C CNN
+F 1 "GND" H 3605 2302 50  0000 C CNN
+F 2 "" H 3600 2475 50  0001 C CNN
+F 3 "" H 3600 2475 50  0001 C CNN
+	1    3600 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2475 3600 2400
+Wire Wire Line
+	3600 2400 3450 2400
+Wire Wire Line
+	3450 2300 3600 2300
+Wire Wire Line
+	3600 2300 3600 2400
+Connection ~ 3600 2400
+Connection ~ 3600 2300
+Wire Wire Line
+	3050 2400 3150 2400
+Wire Wire Line
+	2825 1600 2675 1600
+Wire Wire Line
+	3425 1600 3600 1600
+Wire Wire Line
+	3600 1600 3600 2300
+$Comp
+L MCU_Cypress:CY7C68013A-56PVX U1
+U 1 1 5C899A2C
+P 9125 3225
+F 0 "U1" H 9125 5403 50  0000 C CNN
+F 1 "CY7C68013A-56PVX" H 9125 5312 50  0000 C CNN
+F 2 "Package_SO:SSOP-56_7.5x18.5mm_P0.635mm" H 9125 925 50  0001 C CNN
+F 3 "http://www.cypress.com/file/138911/download" H 9125 3425 50  0001 C CNN
+	1    9125 3225
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
